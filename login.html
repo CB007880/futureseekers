@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Futureseekers.lk</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+        <!-- font awsome icons-->
+    <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+
+				<form class="px-4 py-4" action="signup.php" method="post">
+					<h1>Create Account</h1>
+					<div class="social-container">
+						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+					<span>or use your email for registration</span>
+					<input type="text" placeholder="Name" name="user-name"/>
+					<input type="email" placeholder="Email" name="user-email"/>
+					<input type="text" placeholder="Username" name="user-username" />
+					<input type="password" placeholder="Password" name="user-password" />
+					<input type="password" placeholder="Confirm Password" name="confirm-password"/>
+					<select class="form-select" aria-label="User type selection" name="type">
+  						<option selected>Job Seeker</option>
+  						<option value="1">Employer</option>
+					</select>
+						<button name="signup-btn" class="ml-4 mt-2">Sign Up</button>
+				</form>
+
+			</div>
+		<div class="form-container sign-in-container">
+
+			<div class="form">
+				<h1>Sign in</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>or use your account</span>
+
+				<div id="errors" class="alert alert-danger mt-2 mb-0 py-1 px-4 w-100 d-none" style="font-size: 13px;">
+					<ul id="errors-ul" class="list-group text-left">
+					</ul>
+				</div>
+
+				<input id="username" type="text" name="username" placeholder="Username" />
+				<input id="password" type="password" name="password"placeholder="Password" />
+
+				<a href="#">Forgot your password?</a>
+				<button name="signin-btn" onclick="login()">Sign In</button>
+			</div>
+
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hey There!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+				<h6 class="pt-5 mt-5">Admin?</h6>
+				<button class="ghost" onclick="window.location.replace('adminlogin.php')">Sign in</button>
+			</div>
+				
+
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/login.js"> </script>
+
+
+
+</body>
+</html>
